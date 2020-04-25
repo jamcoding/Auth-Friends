@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <ProtectedRoute exact path='/protected' component={FriendsList} />
           <Route path="/login" component={Login} />
-          <Redirect path="/login" />
+          <Redirect to="/login" />
         </Switch>
       </div>
     </Router>
